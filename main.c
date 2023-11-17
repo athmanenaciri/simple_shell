@@ -45,7 +45,7 @@ void	handle_signal(t_ctx *ctx)
 }
 
 int	main(int ac, char **av, char **env)
-{	
+{
 	char	*line;
 	t_ctx	ctx;
 
@@ -62,7 +62,7 @@ int	main(int ac, char **av, char **env)
 		if (line == NULL)
 		{
 			ft_putstr(2, "exit\n");
-			break ;
+			break;
 		}
 		if (*line != '\0')
 			add_history(line);

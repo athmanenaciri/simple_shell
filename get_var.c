@@ -3,7 +3,7 @@
 
 t_env	*get_env_or_null(char *var, t_env *list_env, int n)
 {
-	t_env	*cur;	
+	t_env	*cur;
 
 	cur = list_env;
 	while (cur)
@@ -18,7 +18,7 @@ t_env	*get_env_or_null(char *var, t_env *list_env, int n)
 
 char	*get_var_or_null(char *var, t_env *list_env, int n)
 {
-	t_env	*cur;	
+	t_env	*cur;
 
 	if (ft_strncmp(var, "?", 2) == 0)
 		return (ft_itoa(g_exit_status));

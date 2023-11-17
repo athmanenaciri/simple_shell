@@ -28,9 +28,9 @@ char	*get_tmp(void)
 		if (access(file, F_OK | W_OK | R_OK) == 0)
 		{
 			next_combn(file);
-			continue ;
+			continue;
 		}
-		break ;
+		break;
 	}
 	return (file);
 }
@@ -49,7 +49,7 @@ void	run_here(t_list *node)
 	{
 		line = readline("here> ");
 		if (line == NULL || strncmp(line, del, ft_strlen(del) + 1) == 0)
-			break ;
+			break;
 		ft_putstr(fd, line);
 		ft_putstr(fd, "\n");
 		free(line);

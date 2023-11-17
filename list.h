@@ -25,13 +25,13 @@ typedef struct node
 	struct node			*next;
 	int					is_space;
 	int					len;
-}t_list;
+} t_list;
 
 typedef struct s_env
 {
 	char			*val;
 	struct s_env	*next;
-}t_env;
+} t_env;
 
 typedef struct s_cmd
 {
@@ -39,7 +39,7 @@ typedef struct s_cmd
 	struct s_cmd	*next;
 	t_list			*redirections;
 	char			**words;
-}t_cmd;
+} t_cmd;
 
 void	ft_lstadd_back(t_list **list, t_list *jedida);
 void	ft_lstadd_back_ev(t_env **list, t_env *jedida);

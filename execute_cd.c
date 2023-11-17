@@ -9,7 +9,7 @@ void	execute_pwd(t_ctx *ctx)
 	if (cwd != NULL)
 	{
 		printf("%s\n", cwd);
-		return ;
+		return;
 	}
 	cwd = getcwd(NULL, 0);
 	if (cwd == NULL)
@@ -58,7 +58,7 @@ void	execute_cd(t_ctx *ctx, char **words)
 		if (path == NULL)
 		{
 			ft_putstr(2, "HOME env not setted");
-			return ;
+			return;
 		}
 		g_exit_status = _cd(ctx, path);
 	}
@@ -68,7 +68,7 @@ void	execute_cd(t_ctx *ctx, char **words)
 		if (path == NULL)
 		{
 			ft_putstr(2, "OLDPWD env not setted");
-			return ;
+			return;
 		}
 		g_exit_status = _cd(ctx, path);
 	}

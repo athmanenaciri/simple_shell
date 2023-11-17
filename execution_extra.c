@@ -62,7 +62,7 @@ void	execute_exit(t_ctx *ctx, char **cmd)
 	else if (size > 2)
 	{
 		ft_putstr(2, "minishell: exit: too many arguments\n");
-		return ;
+		return;
 	}
 	exit(ft_atoi(cmd[1]) & 0xff);
 }

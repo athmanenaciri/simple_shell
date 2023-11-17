@@ -4,7 +4,7 @@
 int	ft_strchar(char *line, char *str)
 {
 	int	i;
-	int	j;	
+	int	j;
 
 	i = 0;
 	while (line[i])

@@ -45,13 +45,13 @@ t_list	*get_next_node(t_list	*list)
 		if (cur->type == TK_IGNORE)
 		{
 			cur = cur->next;
-			continue ;
+			continue;
 		}
 		ft_sjoin(&first->val, cur->val, -1);
 		is_space = cur->is_space;
 		first->next = clean_node(cur);
 		if (is_space == 1)
-			break ;
+			break;
 		cur = first->next;
 	}
 	if (cur == NULL)

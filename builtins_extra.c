@@ -42,7 +42,7 @@ void	execute_env(t_ctx *ctx, char **cmd)
 	if (cmd[1])
 	{
 		g_exit_status = 1;
-		return ;
+		return;
 	}
 	env = ctx->env;
 	while (env)

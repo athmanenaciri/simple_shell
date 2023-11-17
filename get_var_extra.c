@@ -40,7 +40,7 @@ void	print_var(char *var, int size)
 	if (var[size] == '\0')
 	{
 		printf("\n");
-		return ;
+		return;
 	}
 	var += size + 1;
 	printf("=\"");

@@ -98,7 +98,7 @@ int	execute(t_cmd *cmds, t_ctx *ctx)
 	{
 		pid = run_cmd(ctx, cmds, cmd_fd, fd);
 		if (pid == -1)
-			break ;
+			break;
 		cmds = cmds->next;
 	}
 	return (ft_wait(pid));

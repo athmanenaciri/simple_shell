@@ -40,8 +40,8 @@ int	creat_cmd(t_cmd **cmd, t_list *list)
 t_list	*convert2cmd(t_list	*list, t_cmd *cmd)
 {
 	t_list	*cur;	
-	t_list	*next;	
-	int		i;
+	t_list	*next;
+	int	i;
 
 	cur = list;
 	i = 0;
@@ -71,7 +71,7 @@ t_cmd	*filter_pipes(t_list *list)
 	t_list	*cur;
 	t_list	*next;
 	t_cmd	*head;
-	t_cmd	*cmd;	
+	t_cmd	*cmd;
 
 	cur = list;
 	head = NULL;
@@ -82,7 +82,7 @@ t_cmd	*filter_pipes(t_list *list)
 		next = convert2cmd(cur, cmd);
 		ft_lstadd_back_cmd(&head, cmd);
 		if (next == NULL)
-			break ;
+			break;
 		cur = next->next;
 		destroy_one(next);
 	}
