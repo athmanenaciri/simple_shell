@@ -1,4 +1,5 @@
 #include "exec.h"
+#include <readline/readline.h>
 #include "simpleshell.h"
 #include <termios.h>
 
