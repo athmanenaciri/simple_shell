@@ -70,6 +70,5 @@ int	main(int ac, char **av, char **env)
 		exec_line(line, &ctx);
 		free(line);
 	}
-	rl_clear_history();
 	return (destroy_env(ctx.env), g_exit_status);
 }
