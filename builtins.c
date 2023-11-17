@@ -27,7 +27,7 @@ int	search_and_replace(t_ctx *ctx, char *var)
 
 	g_exit_status = 1;
 	if (!is_var(var) || (var[var_len(var)] != '\0' && var[var_len(var)] != '='
-			&&!(var[var_len(var)] == '+' && var[var_len(var) + 1] == '=')))
+			 && !(var[var_len(var)] == '+' && var[var_len(var) + 1] == '=')))
 		return (ft_putstr(2, "syntax error\n"), 0);
 	g_exit_status = 0;
 	i = ft_strchar(var, "+=");
@@ -100,7 +100,7 @@ void	execute_unset(t_ctx *ctx, char **cmd)
 				else
 					last->next = next;
 				destroy_env_one(env);
-				break ;
+				break;
 			}
 			last = env;
 			env = env->next;
