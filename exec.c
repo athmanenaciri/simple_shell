@@ -1,5 +1,9 @@
+#include <stdio.h>
 #include "exec.h"
 #include "simpleshell.h"
+#ifdef READLINE_ENABLED
+#include <readline/readline.h>
+#endif
 
 int	count(t_list	*list)
 {
@@ -37,9 +41,9 @@ int	creat_cmd(t_cmd **cmd, t_list *list)
 	return (1);
 }
 
-t_list	*convert2cmd(t_list	*list, t_cmd *cmd)
+t_list	*convert2cmd(t_list *list, t_cmd *cmd)
 {
-	t_list	*cur;	
+	t_list	*cur;
 	t_list	*next;
 	int	i;
 
